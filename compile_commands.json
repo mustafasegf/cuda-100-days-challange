@@ -1,0 +1,14 @@
+[
+  {
+    "arguments": [
+      "nvcc",
+      "-c",
+      "--cuda-gpu-arch=sm_86",
+      "--cuda-path=/nix/store/cxb6q2wdmlxbhxsxhqz5s96q5vjniig4-cuda-merged-12.2",
+      "--no-cuda-version-check",
+      "hello.cu"
+    ],
+    "directory": "/home/mustafa/project/cuda",
+    "file": "/home/mustafa/project/cuda/hello.cu"
+  }
+]
