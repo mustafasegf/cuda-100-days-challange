@@ -17,3 +17,17 @@ What i do:
 
 What resource i use: 
 - read chapter 1 and 2 pmpp book
+
+# Day 2
+
+File: [colorToGrayscale.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-002/colorToGrayscale.cu)
+
+Implemented simple bitmap 24 bit to 8bit bitmap grayscale conversion using 2d cuda kernel.
+
+what i do:
+- Doing the pmpl chapter 2 excercise
+- read about thread can be 1, 2,or 3D. that also included block. thread in block can be up to 1024, where block can be much higher.
+
+What resource i use:
+- excersice pmpp chapter 2
+- first part pmpp chapter 3 for grayscale
