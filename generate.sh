@@ -53,8 +53,12 @@ EOF
 # Create empty .cu file
 touch "$folder/${prog}.cu"
 
+# Copy jupyter file
+cp day-004/cuda_on_colab.ipynb "${folder}/cuda_on_colab.ipynb"
+sed -i "s/matmul\.cu/${prog}.cu/g" "${folder}/cuda_on_colab.ipynb"
+
 # Update .lastday
 echo "$day" > .lastday
 
-echo "Created $folder with $prog.cu, Makefile, .gitignore and README.md"
+echo "Created $folder with $prog.cu, Makefile, .gitignore, README.md and notebook"
 
