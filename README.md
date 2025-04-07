@@ -77,3 +77,15 @@ what i do:
 ## PMPP book chap 4
 
 this chapter talks about artchitecture and scheduling. it talks about gpu organized to sm, sm have multiple procesing blocks that share control logic and memory resource. when grid is launched, the block assigned to sm. in each sm, per 32 thread is bundled as a warp. one warp execute the same instruction simultaneously. in cuda, we can't assume the timing any of the thread. if we want to synchronize all of the thread to wait for each other, we can use `__syncthreads()`.
+
+# Day 6
+
+File: [transpose-matrix.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-006/transpose-matrix.cu)
+
+implemented matrix transpose kernel
+
+what i do:
+
+- Implemented matrix transpose
+
+didn't have the energy to read pmpp book so implemented the simple kernel
