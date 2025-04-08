@@ -4,7 +4,7 @@ jensen i need a job
 
 Doing it with @wreckitral
 
-# Day 1
+## Day 1
 
 File: [vec-add.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-001/vec-add.cu)
 
@@ -20,7 +20,7 @@ What resource i use:
 
 - read chapter 1 and 2 pmpp book
 
-# Day 2
+## Day 2
 
 File: [colorToGrayscale.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-002/colorToGrayscale.cu)
 
@@ -36,7 +36,7 @@ What resource i use:
 - excersice pmpp chapter 2
 - first part pmpp chapter 3 for grayscale
 
-# Day 3
+## Day 3
 
 File: [blur.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-003/blur.cu)
 
@@ -46,11 +46,11 @@ what i do:
 
 - implemented modified blurKernel from chapter 3 pmpp.
 
-## PMPP book chap 3
+### PMPP book chap 3
 
 the general idea for the blur kernel is to read area around the index. sicne i want to use 24bit bitmap, i need to index the r, g, b seperatedly. then average the pixel amount.
 
-# Day 4
+## Day 4
 
 File: [matmul.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-004/matmul.cu)
 
@@ -60,11 +60,11 @@ what i do:
 
 - implemented matmul in cuda with assert validation with c++ cpu host code
 
-## PMPP book chap 3
+### PMPP book chap 3
 
 for the matmul, we do thread to data mapping. every data on the output is mapped to one thread. since the matmul require row and column from two matrix, we loop both of them to get all the data.
 
-# Day 5
+## Day 5
 
 File: [vector-add-sm.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-005/vector-add-sm.cu)
 
@@ -74,11 +74,11 @@ what i do:
 
 - Implemented vector addition
 
-## PMPP book chap 4
+### PMPP book chap 4
 
 this chapter talks about artchitecture and scheduling. it talks about gpu organized to sm, sm have multiple procesing blocks that share control logic and memory resource. when grid is launched, the block assigned to sm. in each sm, per 32 thread is bundled as a warp. one warp execute the same instruction simultaneously. in cuda, we can't assume the timing any of the thread. if we want to synchronize all of the thread to wait for each other, we can use `__syncthreads()`.
 
-# Day 6
+## Day 6
 
 File: [transpose-matrix.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-006/transpose-matrix.cu)
 
@@ -89,3 +89,15 @@ what i do:
 - Implemented matrix transpose
 
 didn't have the energy to read pmpp book so implemented the simple kernel
+
+## Day 7
+
+File: [sobel.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-007/sobel.cu)
+
+implemented sobel edge detection kernel
+
+what i do:
+
+- Implemented sobel edge detection kernel
+
+didn't have the energy again today to read pmpp book so implemented the simple kernel
