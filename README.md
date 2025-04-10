@@ -115,3 +115,13 @@ what i do
 
 ### PMPP book chap 5
 this chapter discus about how memory have latency and there's different rank of memory. we need to choose memory to reduce the latency.
+
+
+## Day 9
+
+File: [blur-tiled.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-009/blur-tiled.cu)
+
+implemented blur with tiled kernel
+
+what i do
+- implemented blur with shared memory
