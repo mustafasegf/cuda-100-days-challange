@@ -25,6 +25,7 @@
             export LD_LIBRARY_PATH=${pkgs.zluda}/lib:$LD_LIBRARY_PATH
             export LD_LIBRARY_PATH=${pkgs.rocmPackages.clr}/lib/:$LD_LIBRARY_PATH
             export CUDA_PATH=${pkgs.cudatoolkit}
+            export CUDA_HOME=${pkgs.cudatoolkit}
           '';
         };
       });

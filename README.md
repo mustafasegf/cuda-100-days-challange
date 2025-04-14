@@ -138,3 +138,14 @@ what i do
 
 ### PMPP book chap 6
 this chapter discuss about performance optimization. it talks about the memory access pattern and the speed of memory acess. it talks on what kind of optimization that we can do.
+
+## Day 11
+
+File: [transpose-shared-memory-bank.cu](https://github.com/mustafasegf/cuda-100-days-challange/blob/master/day-011/transpose-shared-memory-bank.cu)
+
+implemented transpsoe matrix with shared memory bank
+
+
+what i do
+- implemented transpsoe matrix with shared memory bank
+
